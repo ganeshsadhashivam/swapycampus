@@ -12,6 +12,19 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        scrollRightToLeft: "scrollRightToLeft 15s linear infinite",
+      },
+      keyframes: {
+        scrollRightToLeft: {
+          "0%": {
+            transform: "translateX(100%)",
+          },
+          "100%": {
+            transform: "translateX(-100%)",
+          },
+        },
+      },
     },
   },
   plugins: [],
